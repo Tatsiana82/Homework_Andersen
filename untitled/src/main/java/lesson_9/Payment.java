@@ -18,7 +18,7 @@ public class Payment {
         }
     }
 
-    public void addProduct(String name, double cost) {
+    public void addProduct(String name, int cost) {
         productList.add(new Product(name, (int) cost));
     }
 
@@ -34,7 +34,7 @@ public class Payment {
         @Override
         public String toString(){
             return(name + " : "
-                    + cost );
+                    + cost);
         }
     }
 }
