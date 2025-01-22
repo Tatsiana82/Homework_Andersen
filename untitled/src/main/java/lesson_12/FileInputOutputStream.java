@@ -9,9 +9,9 @@ public class FileInputOutputStream {
         String textToWrite = "Value 1;Value 2;Value 3";
         String pathToFile = "C:\\Users\\User\\Desktop\\AQA\\test.txt";
 
-        try (FileOutputStream fileOutputStream = new FileOutputStream(pathToFile)){
+        try (FileOutputStream fileOutputStream = new FileOutputStream(pathToFile)) {
             fileOutputStream.write(textToWrite.getBytes());
-        } catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("*******************************");
